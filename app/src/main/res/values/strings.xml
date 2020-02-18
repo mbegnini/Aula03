@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Aula 03</string>
+    <string name="nome">nome</string>
+    <string name="inicio">Tela Inicial</string>
+    <string name="e_mail">e-mail</string>
+    <string name="curso">curso</string>
+    <string name="concluir">Concluir</string>
+    <string name="proximo">Próximo</string>
+    <string name="bem_vindo">Seja bem vindo </string>
+    <string name="texto_de_retorno">Texto de retorno</string>
+</resources>
