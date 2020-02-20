@@ -10,6 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -50,6 +51,8 @@ public class MainActivity extends AppCompatActivity {
         String Snome = nome.getText().toString();
         Bundle bundle = new Bundle();
         bundle.putString("nome",Snome);
+        bundle.putString("email",email.getText().toString());
+        bundle.putString("curso",curso.getText().toString());
         intent.putExtras(bundle);
         //startActivity(intent);
         startActivityForResult(intent, TELA2);

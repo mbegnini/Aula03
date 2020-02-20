@@ -8,4 +8,5 @@
     <string name="proximo">Próximo</string>
     <string name="bem_vindo">Seja bem vindo </string>
     <string name="texto_de_retorno">Texto de retorno</string>
+    <string name="retorno_invalido">Retorno invalido!!!</string>
 </resources>

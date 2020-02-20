@@ -8,6 +8,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Tela2Activity extends AppCompatActivity {
 
@@ -32,12 +33,15 @@ public class Tela2Activity extends AppCompatActivity {
 
     public void onClickConcluir(View v){
         String retorno = editTextRetorno.getText().toString();
-        Bundle bundle = new Bundle();
-        bundle.putString("retorno", retorno);
-        Intent returnIntent = new Intent();
-        returnIntent.putExtras(bundle);
-        setResult(Activity.RESULT_OK,returnIntent);
-        finish();
+        if(retorno.length()>2){
+            Bundle bundle = new Bundle();
+            bundle.putString("retorno", retorno);
+            Intent returnIntent = new Intent();
+            returnIntent.putExtras(bundle);
+            setResult(Activity.RESULT_OK,returnIntent);
+            finish();
+        }else
+            Toast.makeText(this,getString(R.string.retorno_invalido),Toast.LENGTH_LONG).show();
     }
 
     @Override
